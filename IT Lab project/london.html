@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html, div {
+  height: 100%;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.parallax {
+
+  background-image: url('london4.jpg');
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.p1{
+height:70%;
+}
+
+.p2{
+height:95%;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.p3 {box-sizing: border-box;}
+</style>
+</head>
+<body
+
+
+<div class="p1"><div class="parallax"></div></div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;height:200px">
+<h1 style="text-align:center;">London</h1>
+<h3 style="text-align:center;">The Big Smoke</h3>
+London, capital of England,is one of the most important tourist placees in the world<br>Standing on river Thames, London is one artistically designed and is a highly developed city.
+</div>
+
+<div class="p2"><div class="parallax"></div></div>
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;height:140px">
+<br>The main attractions of London include the Buckingham Palace, The Big Ben, and the London Eye. Potterheads must definitely go and visit the Warner Bros Harry Potter Studio Tour which contains all the setwork and artefacts used for the Harry Potter movies. With football everywheere in the air, football fans have hell lotta iconic places to visit like Wembley Stadium, Stamford Bridge and the Emirates. Not to forget, the night view from The Shard gives us a beautiful top view of the entire city.
+</div>
+
+<div class="p3"><div class="parallax"></div></div>
+
+<div style="padding:50px 80px">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="london8.jpg" style="width:1024px;height:512px">
+  <div class="text"><h2>The Buckingham Palace<h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="london9.jpg" style="width:1024px;height:512px">
+  <div class="text"><h2>The London Eye<h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="london7.jpg" style="width:1024px;height:512px">
+  <div class="text"><h2>Wimbledon Centre Court</h2></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<center>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</center>
+<br>
+<br>
+<br>
+<br>
+<div>
+<center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1583201812987!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</center>
+</div>
+<br>
+<BR>
+<BR>  
+<center><div class="pagination" >
+  <a href="#">&laquo;</a>
+  <a href="london.html">1</a>
+  <a href="londonsecond.html">2</a>
+  <a href="#">&raquo;</a>
+</div></center>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div></div>
+
+</body>
+</html> 

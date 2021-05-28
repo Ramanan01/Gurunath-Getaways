@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="homepage.css">
+<style>
+body, html, div {
+  height: 100%;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  word-spacing: 5px;
+}
+
+.parallax {
+  
+  background-image: url('paris2.jpg');
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.p1{
+	height:70%;
+}
+
+.p2{
+	height:95%;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #111;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  left:240px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.p3 {box-sizing: border-box;}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding-right: 100px;
+  
+  
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-left:30px;
+  padding-right:30px;
+  
+}
+
+.navbar img {
+float: left;
+width: auto;
+height: 46.5px; 
+margin-left:30px;}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="navbar" style="height:50px">
+ 
+  <a href="main_contact.html"><i class="fas fa-phone-alt"></i>  Contact</a>
+  <a href="Socialize.html"><i class="fas fa-users"></i>  Socialise</a>
+  <a href="faq.html"><i class="fa fa-question-circle"></i>  FAQ</a>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fas fa-city city"></i>  Cities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" style="height:80px">
+      <a href="london.html">London</a>
+      <a href="paris.html">Paris</a>
+      
+    </div>
+  </div>
+  
+  
+  
+   <a href="homepage.html"><i class="fas fa-home"></i>  Home</a>
+  <img src="gg.png">
+</div>
+<div class="p1"><div class="parallax"></div></div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;height:300px">
+<h1 style="text-align:center;">PARIS</h1>
+<h3 style="text-align:center;">The City of Lights</h3>
+<p>Paris, capital of France, is one of the most important and influential cities in the world.<br>In terms of tourism, Paris is the second most visited city in Europe after London.</p>
+</div>
+
+<div class="p1"><div class="parallax"></div></div>
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;height:200px">
+<p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
+</div>
+
+<div class="p2"><div class="parallax"></div></div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;height:400px">
+Paris is not just the capital of France; it is the capital of fashion and the city of love. Located by the River Seine in the north of France, Paris is reputed for being the most beautiful and romantic city in the world. It is overwhelmed with culture, history, iconic architecture, arty treasures, delicious food and exciting fashion. Europe's most enchanting city, Paris is known for its many monuments, especially the Eiffel Tower, Notre-Dame Cathedral, Arc de Triomphe, Opéra Garnier, Les Invalides, etc.<br><br>Paris was home to some of the best artists through history; hence, it harbors treasures and antiques from the masters like Picasso, Van Gogh, Monet, Dalí, and Renoir. Paris (and the whole of France) is famous for its food and drinks; from cozy little cafes to one of its many Michelin-starred restaurants – the food is prepared and presented with perfection here. Whether you’re a first-timer or regular visitor, Paris always seems magical as there are so many places to explore. It’s no wonder that the city is one of the most popular tourist destinations in the world and welcomes over 45 million visitors every year.
+</div>
+
+<div class="p3"><div class="parallax"></div></div>
+
+<div style="padding:50px 80px">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <center><img src="paris3.jpg" style="width:700px; height:550px"></center>
+  <div class="text">Eiffel Tower</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <center><img src="paris4.jpg" style="width:700px; height:550px"></center>
+  <div class="text">Louvre Museum</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <center><img src="paris5.jpg" style="width:700px; height:550px"></center>
+  <div class="text">Arc De Triomphe</div>
+</div>
+
+
+</div>
+
+
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+
+<center>
+<div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.10803373056!2d2.206977064368058!3d48.858774103123785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1583167626867!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+</iframe>
+</center>
+<br><br><br><br>
+<center><div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a  href="paris pg2.html">2</a>
+  <a href="paris pg2.html">&raquo;</a>
+</div></center>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</div></div>
+
+</body>
+</html>	
